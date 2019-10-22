@@ -1,8 +1,23 @@
 {
-  "name": "bookr",
+  "name": "backend-",
   "version": "1.0.0",
-  "description": "Bookr is your source for all things Text Book. -Back End",
+  "description": "Bookr is your source for all things Text Book. Picture the AirBNB of text books, a social platform for peer reviewed text books.",
   "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.5",
+    "nodemon": "^1.19.4",
+    "pg": "^7.12.1",
+    "sqlite3": "^4.1.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "server": "nodemon index.js",
     "test": "cross-env DB_ENV=testing jest --watch",
@@ -10,32 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bookr-backend/bookr-BE.git"
+    "url": "git+https://github.com/Bookr-Build-Week/Backend-.git"
   },
   "author": "Mimi Hoang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bookr-backend/bookr-BE/issues"
+    "url": "https://github.com/Bookr-Build-Week/Backend-/issues"
   },
-  "homepage": "https://github.com/bookr-backend/bookr-BE#readme",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "helmet": "^3.21.0",
-    "jsonwebtoken": "^8.5.1",
-    "knex": "^0.19.3",
-    "pg": "^7.12.1",
-    "sqlite3": "^4.1.0"
-  },
-  "devDependencies": {
-    "cross-env": "^5.2.1",
-    "jest": "^24.9.0",
-    "nodemon": "^1.19.2",
-    "supertest": "^4.0.2"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  }
+  "homepage": "https://github.com/Bookr-Build-Week/Backend-#readme"
 }
