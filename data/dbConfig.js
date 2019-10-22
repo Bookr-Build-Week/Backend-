@@ -1,5 +1,5 @@
 const knex = require('knex');
-const config = requir("../knexfile.js");
+const config = require("../knexfile.js");
 
 const dbEnv = process.env.DB_ENV || "development";
 const configObj = config[dbEnv];
