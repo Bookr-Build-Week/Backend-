@@ -2,8 +2,8 @@ require('dotenv').config();
 
 const server = require ('./api/server');
 
-const port = process.env.PORT || 4000;
-server.listen(port, () => {
-    console.log(`\n** Server listening on port ${port} **\n`);
-
-});
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4000;
+}
+server.listen(port);
