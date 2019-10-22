@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Bookr is your source for all things Text Book. Picture the AirBNB of text books, a social platform for peer reviewed text books.",
   "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "cross-env DB_ENV=testing jest --watch",
+    "start": "node index.js"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -18,11 +23,7 @@
     "supertest": "^4.0.2"
   },
   "devDependencies": {},
-  "scripts": {
-    "server": "nodemon index.js",
-    "test": "cross-env DB_ENV=testing jest --watch",
-    "start": "node index.js"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bookr-Build-Week/Backend-.git"
