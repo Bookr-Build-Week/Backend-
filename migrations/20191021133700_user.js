@@ -7,6 +7,8 @@ exports.up = function(knex) {
               .notNullable()
           tbl.string('password', 64)
               .notNullable()
+            tbl.string('email', 100)
+                .notNullable()
       })
     };
 
