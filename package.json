@@ -23,7 +23,6 @@
     "supertest": "^4.0.2"
   },
   "devDependencies": {},
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bookr-Build-Week/Backend-.git"
