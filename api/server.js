@@ -20,9 +20,20 @@ server.use('/api/books', bookRouter);
 server.use('/api/reviews',reviewRouter);
 
 server.get('/', (req, res) => {
-  res.status(200).json("Server running!");
+  res.status(200).json('Server running!');
 });
-
+server.get('/api/auth', (req, res) => {
+  res.status(200).json('Please register/login');
+});
+server.get('api/users', (req, res) => {
+  res.status(200).json('Show users');
+})
+server.get('api/books', (req, res) => {
+  res.status(200).json('Show books');
+});
+server.get('/api/reviews', (req, res) => {
+  res.status(200).json('Show reviews')
+})
 module.exports = server;
 
  
