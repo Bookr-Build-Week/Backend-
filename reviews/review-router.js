@@ -5,6 +5,18 @@ const validateToken = require('../auth/validate.js');
 const router = express.Router();
 
 // CREATE
+ router.get('/all', (req, res) => {
+  return Reviews.find(
+) .then(review => {
+  res.status(200).json(review)
+})
+})
+router.get('/join', async (req, res) => {
+   return await Reviews.join()
+      .then(data => res.json(data))
+      .catch (err => res.json(err)) 
+    
+  })
 router.post('/',validateToken, async (req, res) => {
     const reviewData = req.body;
     try {
@@ -16,12 +28,7 @@ router.post('/',validateToken, async (req, res) => {
   });
 
 // READ
-router.get('/all', (req, res) => {
-  return Reviews.find(
-) .then(review => {
-  res.status(200).json(review)
-})
-})
+
 router.get('/book/:book_id',validateToken, async (req, res) => {
     const { book_id } = req.params;
   
@@ -90,5 +97,6 @@ router.get('/book/:book_id',validateToken, async (req, res) => {
       res.status(500).json({ message: 'Failed to delete review: ' + err });
     }
   });
+ 
 
   module.exports = router;

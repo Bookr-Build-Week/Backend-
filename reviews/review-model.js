@@ -6,7 +6,8 @@ module.exports={
     findByBookId,
     update,
     remove,
-    find
+    find,
+    join
 }
 
 //CREATE
@@ -44,4 +45,7 @@ async function update(changes,id){
 async function remove(id){
     const [book_id] = await db('reviews').returning('book_id').where({ id }).del();
     return findByBookId(book_id);
+}
+async function join(){
+    await db('reviews').join('users', 'reviews.user_id', 'users.id').join('books', 'reviews.book_id', 'books.id').select('users.id', 'reviews.content')
 }
