@@ -16,6 +16,12 @@ router.post('/',validateToken, async (req, res) => {
   });
 
 // READ
+router.get('/', (req, res) => {
+  return Reviews.find(
+) .then(review => {
+  res.status(200).json(review)
+})
+})
 router.get('/book/:book_id',validateToken, async (req, res) => {
     const { book_id } = req.params;
   

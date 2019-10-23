@@ -5,7 +5,8 @@ module.exports={
     findById,
     findByBookId,
     update,
-    remove
+    remove,
+    find
 }
 
 //CREATE
@@ -13,7 +14,10 @@ async function add(review) {
     const [id] = await db('reviews').returning('id').insert(review);
     return findById(id); 
 }
-
+async function find() {
+    const reviews = await db('reviews')
+    return reviews
+}
 // READ
 //GET BY Review ID
 function findById(id){
