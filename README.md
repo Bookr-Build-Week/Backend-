@@ -5,7 +5,7 @@ Bookr is your source for all things Text Book. Picture the AirBNB of text books,
 This is a Build week backend project for Bookr app.
 
 Heroku URL:
-https://bookr-build-backend.herokuapp.com
+https://sheltered-springs-53032.herokuapp.com/
 
 User API:
 
@@ -54,4 +54,3 @@ Review Shape:
 
 Note: All routes except auth routes (/api/auth/register and /api/auth/login) require passing JWT token in Authorization header of the request.
 
-Postman collection for all the APIs is present under /api-test directory.
