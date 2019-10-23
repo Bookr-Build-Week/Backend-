@@ -14,8 +14,8 @@ async function add(review) {
     const [id] = await db('reviews').returning('id').insert(review);
     return findById(id); 
 }
- function find() {
-    return db('reviews')
+async function find() {
+    return await db('reviews')
 }
 // READ
 //GET BY Review ID

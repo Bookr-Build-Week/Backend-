@@ -16,7 +16,7 @@ router.post('/',validateToken, async (req, res) => {
   });
 
 // READ
-router.get('/', (req, res) => {
+router.get('/all', (req, res) => {
   return Reviews.find(
 ) .then(review => {
   res.status(200).json(review)
