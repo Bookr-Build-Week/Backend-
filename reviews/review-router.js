@@ -17,7 +17,7 @@ router.get('/join', async (req, res) => {
       .catch (err => res.json(err)) 
     
   })
-router.post('/',validateToken, async (req, res) => {
+router.post('/', async (req, res) => {
     const reviewData = req.body;
     try {
         const addedReview = await Reviews.add(reviewData);

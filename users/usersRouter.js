@@ -3,7 +3,7 @@ const validateToken = require('../auth/validate.js');
 const db = require('../database/dbConfig.js');
 
 // READ
-router.get('/', validateToken, (req, res) => {
+router.get('/', (req, res) => {
   db('users')
     .then(users => {
       users = users.map(user => {
