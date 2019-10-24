@@ -5,7 +5,7 @@ const validateToken = require('../auth/validate.js');
 const router = express.Router();
 
 // CREATE
-router.post('/', async (req, res) => {
+router.post('/',validateToken, async (req, res) => {
   const bookData = req.body;
 
   try {
@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
 });
 
 // READ
-router.get('/', async (req, res) => {
+router.get('/',validateToken, async (req, res) => {
   try {
     const books = await Books.find();
     res.status(200).json(books);
