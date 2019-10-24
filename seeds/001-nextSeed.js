@@ -9,7 +9,7 @@ exports.seed = function(knex) {
         {username: 'mimi', password: 'lv28jd7s94'},
         {username: 'Gul', password: 'dogs'},
         {username: 'Gurpreet', password: 'ducks'},
-        {username: 'Elliot',}
+        {username: 'Elliot', password: 'animals'}
       ]);
     });
 };
