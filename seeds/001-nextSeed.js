@@ -5,7 +5,11 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('users').insert([
-        {username: 'asdfdghhj', password: '1445xdfgvf541' }
+        {username: 'admin', password: 'password' },
+        {username: 'mimi', password: 'lv28jd7s94'},
+        {username: 'Gul', password: 'dogs'},
+        {username: 'Gurpreet', password: 'ducks'},
+        {username: 'Elliot', password: 'animals'}
       ]);
     });
 };
