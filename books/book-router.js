@@ -17,7 +17,7 @@ router.post('/',validateToken, async (req, res) => {
 });
 
 // READ
-router.get('/', async (req, res) => {
+router.get('/', validateToken, async (req, res) => {
   try {
     const books = await Books.find();
     res.status(200).json(books);
