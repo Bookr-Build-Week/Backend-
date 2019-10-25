@@ -1,6 +1,6 @@
 # bookr-BE
 
-Bookr is your source for all things Text Book. Picture the AirBNB of text books, a social platform for peer reviewed text books.
+Bookr is your source for all things Text Book. 
 
 This is a Build week backend project for Bookr app.
 
