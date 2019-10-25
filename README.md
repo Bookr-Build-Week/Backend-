@@ -5,7 +5,7 @@ Bookr is your source for all things Text Book. Picture the AirBNB of text books,
 This is a Build week backend project for Bookr app.
 
 Heroku URL:
-https://sheltered-springs-53032.herokuapp.com/
+https://bookr-be.herokuapp.com/
 
 User API:
 
