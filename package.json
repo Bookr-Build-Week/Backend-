@@ -1,7 +1,7 @@
 {
   "name": "backend-",
   "version": "1.0.0",
-  "description": "Bookr is your source for all things Text Book. Picture the AirBNB of text books, a social platform for peer reviewed text books.",
+  "description": "Bookr is your source for all things Textbook.",
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
